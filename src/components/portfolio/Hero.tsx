@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
-import avatar from "@/assets/avatar.jpg";
+import profileAsset from "@/assets/profile.png.asset.json";
+
+const avatar = profileAsset.url;
 import { Dot, Pill, Tag } from "./primitives";
 
 const LINES = [
