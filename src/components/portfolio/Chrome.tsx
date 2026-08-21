@@ -40,7 +40,7 @@ export function Navbar() {
 
   useEffect(() => {
     const onScroll = () => {
-      let current = SECTIONS[0].id;
+      let current = SECTIONS[0]!.id;
       for (const s of SECTIONS) {
         const el = document.getElementById(s.id);
         if (el && el.getBoundingClientRect().top <= 140) current = s.id;

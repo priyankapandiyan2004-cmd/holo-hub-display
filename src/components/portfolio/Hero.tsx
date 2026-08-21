@@ -16,10 +16,10 @@ function Typewriter() {
 
   useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      setText(LINES[0]);
+      setText(LINES[0]!);
       return;
     }
-    const full = LINES[i];
+    const full = LINES[i]!;
     if (!deleting && text === full) {
       const t = setTimeout(() => setDeleting(true), 1800);
       return () => clearTimeout(t);
